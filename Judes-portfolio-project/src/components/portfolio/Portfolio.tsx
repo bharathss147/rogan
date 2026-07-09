@@ -227,6 +227,9 @@ function Hero() {
   return (
     <section id="home" className="relative flex min-h-screen items-center justify-center px-6 pt-32">
       <div className="mx-auto max-w-5xl text-center">
+        <motion.div variants={fadeUp} initial="hidden" animate="show" className="mx-auto mb-8 h-32 w-32 md:h-40 md:w-40 overflow-hidden rounded-full border-2 border-white/10 shadow-[0_0_30px_rgba(108,92,255,0.2)]">
+          <img src="/profile.jpg" alt="Judes Rogan" className="h-full w-full object-cover" />
+        </motion.div>
         <motion.div variants={fadeUp} initial="hidden" animate="show">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-muted-foreground backdrop-blur-md">
             <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_10px_#34d399]" />
